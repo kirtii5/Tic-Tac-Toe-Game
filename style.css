@@ -60,6 +60,7 @@ h1 {
     #container {
         height: 300px;
         width: 300px;
+        margin-top: 50px;
     }
     #game-box{
         height: 250px;
@@ -72,6 +73,15 @@ h1 {
         height: 60px;
         width: 60px;
         margin: 5px;
+    }
+
+    #reset-btn {
+      margin-top: 50px;
+    }
+
+    .result {
+      font-size: 20px !important;
+      padding-bottom: 0px;
     }
 }
 
@@ -90,6 +100,7 @@ h1 {
 
 .result {
   font-size: 30px;
+  color: #6c584c;
 }
 
 .hide{
