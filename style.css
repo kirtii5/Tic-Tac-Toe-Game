@@ -54,6 +54,7 @@ h1 {
     border-radius: 10px;
     margin-top: 10px;
     align-self: center;
+    margin-bottom: 100px;
 }
 
 @media (max-width : 500px) {
@@ -83,19 +84,19 @@ h1 {
       font-size: 20px !important;
       padding-bottom: 0px;
     }
+
+    .msg-container {
+      margin: 150px 0;
+      height: 100vmin;
+    }
 }
 
 .msg-container {
-    height: 97vmin;
+    height: 96vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
-}
-
-#new-btn {
-  margin-top: 10px;
 }
 
 .result {
@@ -105,4 +106,9 @@ h1 {
 
 .hide{
     display: none;
+}
+
+.win {
+  background-color: #6c584c;
+  color:#adc178;
 }

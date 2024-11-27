@@ -67,6 +67,7 @@ let checkWinner = () => {
 
         if(val1 != "" && val2 != "" && val3 != ""){
             if(val1 === val2 && val2 ===  val3){
+                setWinColor([pattern[0] , pattern[1] , pattern[2]]);
                 showWinner(val1);
                 return true;
             }
@@ -79,6 +80,7 @@ const resetGame = () => {
     turn0 = true;
     enableBoxes();
     msgBox.classList.add("hide");
+    resetColor(boxes.length);
 }
 
 
@@ -86,6 +88,20 @@ let showWinner = (winner) => {
     result.textContent= `Congratulations ! Player ${winner} is winner`;
     disableBoxes();
     msgBox.classList.remove("hide");
+}
+
+let setWinColor = (value) => {
+    for(val of value){
+        boxes[val].classList.toggle("win");
+    }
+}
+
+let resetColor = (n) => {
+    for(i=0 ; i<n ; i++){
+        if(boxes[i].classList.contains("win")){
+            boxes[i].classList.remove("win");
+        }
+    }
 }
 
 newGameBtn.addEventListener("click" , resetGame);
