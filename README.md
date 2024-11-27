@@ -10,4 +10,6 @@ Win detection and draw handling
 
 Reset and new game functionality
 
+Responsive for all screen type
+
 Check out the code and start playing!
